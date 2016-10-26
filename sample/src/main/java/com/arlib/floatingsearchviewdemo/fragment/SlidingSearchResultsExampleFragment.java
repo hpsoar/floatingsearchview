@@ -64,6 +64,13 @@ public class SlidingSearchResultsExampleFragment extends BaseExampleFragment {
         setupDrawer();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        mSearchView.setSearchFocused(true);
+    }
+
     private void setupFloatingSearch() {
         mSearchView.setOnQueryChangeListener(new FloatingSearchView.OnQueryChangeListener() {
 

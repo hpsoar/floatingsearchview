@@ -61,6 +61,13 @@ public class ScrollingSearchExampleFragment extends BaseExampleFragment implemen
         setupSearchBar();
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+
+        mSearchView.setSearchFocused(true);
+    }
+
     private void setupSearchBar() {
         mSearchView.setOnQueryChangeListener(new FloatingSearchView.OnQueryChangeListener() {
 
