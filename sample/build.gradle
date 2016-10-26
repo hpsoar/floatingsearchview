@@ -21,7 +21,8 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(":library")
+    compile project(':library')
+    compile project(':search')
     compile files('libs/gson-2.4.jar')
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile 'com.android.support:palette-v7:23.4.0'
