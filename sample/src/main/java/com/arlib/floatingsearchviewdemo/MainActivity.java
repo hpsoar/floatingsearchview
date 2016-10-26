@@ -29,6 +29,7 @@ import com.arlib.floatingsearchviewdemo.fragment.BaseExampleFragment;
 import com.arlib.floatingsearchviewdemo.fragment.ScrollingSearchExampleFragment;
 import com.arlib.floatingsearchviewdemo.fragment.SlidingSearchResultsExampleFragment;
 import com.arlib.floatingsearchviewdemo.fragment.SlidingSearchViewExampleFragment;
+import com.arlib.floatingsearchviewdemo.fragment.WebSearchFragment;
 
 import java.util.List;
 
@@ -78,6 +79,9 @@ public class MainActivity extends AppCompatActivity
                 return true;
             case R.id.scrolling_search_bar_example:
                 showFragment(new ScrollingSearchExampleFragment());
+                return true;
+            case R.id.web_search_example:
+                showFragment(new WebSearchFragment());
                 return true;
             default:
                 return true;
