@@ -58,7 +58,7 @@ public class WebSearchFragment extends BaseExampleFragment implements AppBarLayo
     private boolean mIsDarkSearchTheme = false;
 
     private FloatingSearchView mSearchView;
-    private AppBarLayout mAppBar;
+    //private AppBarLayout mAppBar;
     private WebView mWebView;
     private Search mSearch;
 
@@ -108,9 +108,9 @@ public class WebSearchFragment extends BaseExampleFragment implements AppBarLayo
 
         mWebView = (WebView)view.findViewById(R.id.search_result_webview);
         mSearchView = (FloatingSearchView) view.findViewById(R.id.floating_search_view);
-        mAppBar = (AppBarLayout) view.findViewById(R.id.appbar);
+        //mAppBar = (AppBarLayout) view.findViewById(R.id.appbar);
 
-        mAppBar.addOnOffsetChangedListener(this);
+        //mAppBar.addOnOffsetChangedListener(this);
 
         setupDrawer();
         setupSearchBar();
@@ -140,7 +140,7 @@ public class WebSearchFragment extends BaseExampleFragment implements AppBarLayo
 
     @Override
     public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-        mSearchView.setTranslationY(verticalOffset);
+        //mSearchView.setTranslationY(verticalOffset);
     }
 
     /**
